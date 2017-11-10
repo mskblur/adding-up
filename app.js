@@ -44,7 +44,7 @@ rl.on('close', () => {
     });
     //map関数は第二引数で配列の添字を取ることができる
     const rankingStrings = rankingArray.map((p, index) => {
-        return index+1 + '位 ' + p[0] + ': ' + p[1].p10 + ' => ' + p[1].p15 + ' 変化率:' + p[1].change;
+        return index+1 + '位 ' + p[0] + ':    ' + p[1].p10 + ' => ' + p[1].p15 + ' 変化率:' + p[1].change;
     })
     console.log(rankingStrings);
 });
